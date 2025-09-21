@@ -1,0 +1,155 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #333;
+  text-align: center;
+  padding: 1.2rem;
+  background-image: url(./imagens/backgroung.svg);
+}
+
+.container {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.header{
+    margin-bottom: 2rem;
+}
+
+.foto-head {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #679ff5;
+  margin-bottom: 10px;
+}
+
+.titulo{
+    font-family: 'Fonte-Principal', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: #444;
+}
+
+.subtitulo {
+  color: #666;
+  font-size: 1rem;
+}
+
+.frase-impacto {
+  margin-top: 10px;
+  font-style: italic;
+  color: #444;
+}
+
+.cta-button {
+  display: block;
+  background: #5cbeff;
+  color: #fff;
+  text-decoration: none;
+  padding: .6rem;
+  border-radius: 2rem;
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: .4s;
+}
+.cta-button:hover {
+  background: #679ff5;
+}
+
+.servicos {
+  margin-bottom: 1rem;
+}
+.servicos h2 {
+  margin-bottom: 1rem;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+.card {
+  background: #d2edff;
+  padding: .8rem;
+  border-radius: .8rem;
+  font-size: 1rem;
+  transition: 0.4s;
+  width: 100%;
+  margin-bottom: .8rem;
+}
+.card:hover {
+  background: #679ff5;
+}
+
+.sobre-mim {
+  margin-bottom: 2rem;
+}
+
+.sobre-mim h2 {
+  margin-bottom: 1rem;
+}
+
+.SM-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: .8rem;
+}
+
+.SM-texto {
+  font-style: italic;
+  margin: .5rem .3rem;
+  color: #666;
+}
+
+
+
+
+.links {
+  margin: 25px 0;
+}
+.links h2 {
+  margin-bottom: 12px;
+}
+.links a {
+  display: block;
+  background: #e9efff;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 8px 0;
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.links a:hover {
+  background: #d0dcff;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+
+
+@font-face {
+    font-family: Fonte-Principal;
+    src: url(./fontes/BonheurRoyale-Regular.ttf);
+}
