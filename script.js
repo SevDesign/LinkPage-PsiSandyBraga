@@ -14,3 +14,19 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".container").style.opacity = 1;
   }, 100);
 });
+
+// função de ler mais e ler menos do sobre mim
+const expandButton = document.querySelector(".expand-button");
+const minimizeButton = document.querySelector(".minimize-button");
+const SMContainerMin = document.querySelector(".SM-container-min");
+const SMContainerExpanded = document.querySelector(".SM-container-expanded");
+
+expandButton.addEventListener("click", () => {
+  SMContainerMin.style.display = "none";
+  SMContainerExpanded.style.display = "flex";
+});
+
+minimizeButton.addEventListener("click", () => {
+  SMContainerMin.style.display = "flex";
+  SMContainerExpanded.style.display = "none";
+});
