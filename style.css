@@ -21,8 +21,17 @@ body {
   color: #fff;
   text-align: center;
   padding: 1.2rem;
-  background: linear-gradient(180deg, #fff, #e6c1cf, #fdf2f7, #d6d6d6);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background: linear-gradient(180deg, #ffeded, #e6c1cf, #dbc5cf, #cebbbb);
+    font-family: 'Fonte-Principal-italicBold', sans-serif;
+}
+
+.particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .container {
@@ -31,6 +40,7 @@ body {
   padding: 1.5rem;
   border-radius: 20px;
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+  z-index: 1;
 }
 
 .header{
@@ -46,8 +56,8 @@ body {
   margin-bottom: 10px;
 }
 
-.titulo{
-    font-family: 'Fonte-Principal', sans-serif;
+.nome{
+    font-family: 'Fonte-Destaque', sans-serif;
     font-size: 2rem;
     letter-spacing: 1px;
     color: #444;
@@ -56,12 +66,13 @@ body {
 .subtitulo {
   color: #666;
   font-size: 1rem;
+  font-family: 'Fonte-Principal', sans-serif;
 }
 
 .frase-impacto {
   margin-top: 10px;
-  font-style: italic;
   color: #444;
+  font-family: 'Fonte-Principal-italic', sans-serif;
 }
 
 .cta-button {
@@ -75,7 +86,9 @@ body {
   font-size: 1.3rem;
   font-weight: bold;
   transition: .4s;
+  text-shadow: #613131 0px 0px 1.4px;
 }
+
 .cta-button:hover {
   background: #679ff5;
 }
@@ -83,11 +96,12 @@ body {
 .servicos {
   margin-bottom: 1rem;
 }
-.servicos h2 {
+
+.title {
   color: #fafafa;
   font-size: 1.7rem;
   margin-bottom: 1rem;
-  text-shadow: #333 0px 0px 5px;
+  text-shadow: #613131 0px 0px 2px;
   letter-spacing: 1px;
 }
 .cards {
@@ -100,7 +114,6 @@ body {
 .card {
   background: #bcccf7;
   font-size: 1.1rem;
-  font-weight: bold;
   padding: .8rem;
   border-radius: .8rem;
   font-size: 1rem;
@@ -109,23 +122,21 @@ body {
   margin-bottom: .8rem;
   text-decoration: none;
   color: #fff;
+  text-shadow: #613131 0px 0px 1.4px;
 }
+
+.card i {
+  margin-right: .3rem;
+}
+
 .card:hover {
-  background: #5cbeff;
+  background: #679ff5;
 }
 
 .sobre-mim {
   margin-bottom: 2rem;
 }
 
-.sobre-mim h2 {
-  color: #fafafa;
-  font-size: 1.7rem;
-  margin-bottom: 1rem;
-  text-shadow: #333 0px 0px 5px;
-  letter-spacing: 1px;
-
-}
 
 .SM-container-min, .SM-container-expanded {
   display: flex;
@@ -138,37 +149,41 @@ body {
   border-radius: .8rem;
 }
 
+.SM-container-min, .SM-container-expanded li {
+  flex-wrap: wrap;
+}
+
 .SM-container-expanded {
   display: none;
 }
 
 .expand-button, .minimize-button {
-  color: #6C63FF;
+  color: #706db4;
   cursor: pointer;
   font-size: 1.15rem;
   font-weight: bold;
 }
 
-
-
 .links {
   margin: 25px 0;
 }
-.links h2 {
-  margin-bottom: 12px;
-}
+
 .links a {
-  display: block;
-  background: #bfb7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .3rem;
+  background: #bcccf7;
+  color: #FFF;
+  text-shadow: #613131 0px 0px 1.4px;
   padding: 10px;
   border-radius: 8px;
   margin: 8px 0;
-  color: #333;
   text-decoration: none;
   transition: 0.3s;
 }
 .links a:hover {
-  background: #d0dcff;
+  background: #679ff5;
 }
 
 footer {
@@ -180,6 +195,26 @@ footer {
 
 
 @font-face {
-    font-family: Fonte-Principal;
+    font-family: Fonte-Destaque;
     src: url(./fontes/BonheurRoyale-Regular.ttf);
+}
+
+@font-face {
+    font-family: Fonte-Principal;
+    src: url(./fontes/Tinos-Regular.ttf);
+}
+
+@font-face {
+    font-family: Fonte-Principal-italic;
+    src: url(./fontes/Tinos-Italic.ttf);
+}
+
+@font-face {
+    font-family: Fonte-Principal-bold;
+    src: url(./fontes/Tinos-Bold.ttf);
+}
+
+@font-face {
+    font-family: Fonte-Principal-italicBold;
+    src: url(./fontes/Tinos-BoldItalic.ttf);
 }
