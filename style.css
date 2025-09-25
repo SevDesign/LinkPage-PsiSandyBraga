@@ -22,7 +22,7 @@ body {
   text-align: center;
   padding: 1.2rem;
   background: linear-gradient(180deg, #ffeded, #e6c1cf, #dbc5cf, #cebbbb);
-    font-family: 'Fonte-Principal-italicBold', sans-serif;
+  font-family: 'Fonte-Principal-italicBold', sans-serif;
 }
 
 .particles {
@@ -116,7 +116,6 @@ body {
   font-size: 1.1rem;
   padding: .8rem;
   border-radius: .8rem;
-  font-size: 1rem;
   transition: 0.4s;
   width: 100%;
   margin-bottom: .8rem;
@@ -137,7 +136,6 @@ body {
   margin-bottom: 2rem;
 }
 
-
 .SM-container-min, .SM-container-expanded {
   display: flex;
   flex-direction: column;
@@ -149,8 +147,9 @@ body {
   border-radius: .8rem;
 }
 
-.SM-container-min, .SM-container-expanded li {
-  flex-wrap: wrap;
+.SM-text{
+  font-size: 1.1rem;
+  text-shadow: #613131 0px 0px 1px;
 }
 
 .SM-container-expanded {
@@ -181,6 +180,8 @@ body {
   margin: 8px 0;
   text-decoration: none;
   transition: 0.3s;
+  font-size: 1.1rem;
+
 }
 .links a:hover {
   background: #679ff5;
